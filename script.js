@@ -87,11 +87,11 @@ const playerWin = () => {
   modal.style.display = "flex";
 
   if (currentPlayer == "⭕") {
-    winner.innerHTML = `Player✖️Wins!🎉`;
+    winner.innerHTML = `Player✖️ Wins!🎉`;
     playerXScore.innerHTML++;
     localStorage.setItem("Player X", playerXScore.innerHTML);
   } else {
-    winner.innerHTML = `Player⭕Wins!🎉`;
+    winner.innerHTML = `Player⭕ Wins!🎉`;
     playerOScore.innerHTML++;
     localStorage.setItem("Player O", playerOScore.innerHTML);
   }
@@ -113,6 +113,7 @@ resetBtn.addEventListener("click", () => {
   playerOScore.innerHTML = 0;
   playerXScore.innerHTML = 0;
   tie.innerHTML = 0;
+  resetGame();
 });
 
 const resetGame = () => {
