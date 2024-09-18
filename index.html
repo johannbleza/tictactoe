@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="playerTurn">Player⭕'s turn</h1>
+    <div class="game-container">
+      <div class="game"></div>
+    </div>
+    <div class="scoreboard">
+      <div class="score-container">
+        <h2>Player⭕</h2>
+        <h1 class="playerOScore">0</h1>
+      </div>
+      <div class="score-container">
+        <h2>Tie🏁</h2>
+        <h1 class="tie">0</h1>
+      </div>
+      <div class="score-container">
+        <h2>Player✖️</h2>
+        <h1 class="playerXScore">0</h1>
+      </div>
+    </div>
+    <button class="reset">Reset Score</button>
+    <!-- Modal -->
+    <div class="overlay">
+      <div class="modal">
+        <h1 class="winner">Player✖️ Wins!🎉</h1>
+        <h1>🥳🥳🥳</h1>
+        <button class="playAgain">Play Again↩️</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
